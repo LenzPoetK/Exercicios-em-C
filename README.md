@@ -1,2 +1,4 @@
-# Exercicios-em-C
-Alguns exercÃ­cios feitos em C
+## Exercicios-em-C
+
+
+Neste repositório, irei incluir alguns exercícios básicos feitos em `C` para treinar alguns `conceitos de programação` e conceitos da própria `linguagem C`.
