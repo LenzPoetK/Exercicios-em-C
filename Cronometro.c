@@ -1,10 +1,9 @@
 /*
-TENTATIVA DE FAZER UM CONTADOR
+IDEIA DE COMO FAZER UM CRONÃ”METRO EM C QUE CONTA ATÃ‰ 24 HORAS
 */
 
 #include <locale.h>
 #include <stdio.h>
-#include <stdlib.h>
 #include <windows.h>
 
 int main(){
@@ -13,38 +12,36 @@ int main(){
     
     int sec = 0; //segundos
     int min = 0; //minutos
-    int hr = 0; // horas
+    int h = 0; // horas
     
     SetConsoleTitle("Cronometro");
     
     while(1){
              
              system("cls");
-             printf("Cronômetro\n\n");
-             printf("\t\t\t%dh:%dm:%ds\n\n", hr, min, sec);
+             printf("CronÃ´metro\n\n");
+             printf("\t\t\t%dh:%dm:%ds\n\n", h, min, sec);
              
              
              if(sec == 60){
                     
                     sec = 0;
                     min++;
-                    
                     } else if(min == 60){
                            
                            min = 0;
-                           hr++;
-                           
+                           h++;
                            } else if(hr == 24){
                                   
-                                  hr = 0;
-                                  
+                                  h = 0;
+                                  min = 0;
+                                  sec = 0;
+                                  break;
                                   }
                                   
-             Sleep(1000); //tem a função de pausar a execução por um determinado tempo.
+             Sleep(1000); //tem a funÃ§Ã£o de pausar a execuÃ§Ã£o por um determinado tempo.
              sec++; 
-             
              }
     
-    system("pause");
     return 0;
     }
